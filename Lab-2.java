@@ -4,9 +4,9 @@ import java.io.*;
 public class Lab-2 {
     public static void main(String[] args) {
         try {
-            File inputFile = new File("src/Input.txt");
+            File inputFile = new File("Input.txt");
             Scanner sn = new Scanner(inputFile);
-            PrintWriter pw = new PrintWriter("src/Output.txt");
+            PrintWriter pw = new PrintWriter("Output.txt");
             while (sn.hasNextLine()) {
                 String row = sn.nextLine();
                 String[] clm = row.split(",");
