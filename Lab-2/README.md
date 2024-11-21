@@ -1,58 +1,62 @@
 # Math Puzzle Game: RahiForKids
 
-## Description
-Welcome to the **Math Puzzle Game**! This is a simple console-based game where users can attempt math problems, track their scores, and save the results. The game pulls math expressions from an `Input.txt` file, prompts the user to solve them, and records the player's results to an `Output.txt` file.
+**RahiForKids** is a console-based Java application that provides an engaging Math Puzzle Game for children. The game offers three difficulty levels and tracks user progress with a history feature.
+
+---
 
 ## Features
-- **Questionnaire**: The game displays math expressions (addition, subtraction, multiplication, and division) from a file.
-- **User Interaction**: Players can input their answers or choose to stop or skip questions.
-- **Score Tracking**: The game tracks the score based on correct answers and displays the current score after each answer.
-- **Results Logging**: The player's name, score, and timestamp are saved to an output file for later reference.
+
+- **Game Levels**: Easy, Medium, and Hard difficulty levels with math expressions to solve.
+- **Scoring System**: Tracks and displays the user’s score for each session.
+- **History Tracking**: Saves game history, including username, level, scores, and date-time.
+- **Flexible Input**: Users can provide answers or use commands like `stop` to end the game or `skip` to skip a question.
+
+---
+
+## How It Works
+
+1. **Menu Options**:
+    - `Start Game`: Begin a new game session.
+    - `History`: View a list of past game results stored in `Output.txt`.
+    - `Exit`: Exit the application.
+
+2. **Difficulty Levels**:
+    - **Easy**: Simple math problems.
+    - **Medium**: Moderately challenging problems.
+    - **Hard**: Complex problems.
+
+3. **Input File**:
+    - Math problems are read from `Input.txt` in the format of expressions (e.g., `2 + 3, 5 * 6`).
+    - Problems are categorized into levels based on their position in the file.
+
+4. **Output File**:
+    - Game history is saved in `Output.txt`, including:
+      - Username
+      - Level
+      - Total Score
+      - Obtained Score
+      - Date
+      - Time
+
+---
 
 ## Requirements
-- **Java 8+** or higher.
-- The game relies on two text files:
-  - `Input.txt`: Contains math expressions, one per line, separated by commas.
-  - `Output.txt`: A log file where game results are stored.
 
-## Setup Instructions
-1. **Clone the repository** or download the source code.
-2. **Prepare Input.txt**:
-   - Create an `Input.txt` file in the `src` directory. Each line should contain math expressions separated by commas (e.g., `3+5, 10-2, 8*3`).
-   - Each expression should contain two integers and an operator.
-   
-3. **Prepare Output.txt**:
-   - This file will be generated automatically after the game runs. It will store the player's name, total questions, score, and timestamp.
-   
-4. **Compile and Run the Program**:
-   - Compile the Java code using the following command:
-     ```bash
-     javac RahiForKids.java
-     ```
-   - Run the compiled code:
-     ```bash
-     java RahiForKids
-     ```
+- **Java Version**: OpenJDK 17 or later.
+- **Input File**: `Input.txt` containing comma-separated math expressions.
+- **Output File**: `Output.txt` (automatically created if not present).
 
-## How to Play
-1. Run the program, and the game will greet you with a welcome message.
-2. Choose the option to **start the game** or **exit**.
-3. Enter your name when prompted.
-4. The game will show a series of math questions (expressions).
-   - You can **stop** anytime by typing "stop".
-   - You can **skip** a question by typing "skip".
-   - Enter your answer to continue.
-5. After completing the game, your score will be displayed, and your results will be saved in the `Output.txt` file.
+---
 
-## Example Input File (Input.txt)
-```txt
-1+2, 3-1, 4*5, 6/2, 7+8, 9-3, 10*2, 12/3
+## File Format
+
+### Input File (`Input.txt`):
+```text
+2 + 3, 5 * 6, 8 - 4, 12 / 3
 ```
-## Example Output File(Output.txt)
-```txt
-User-Name            Total Score          Obtained Score       Date                 Time
-hello                100                  8                    2024-11-20           22:24:39
-hiii                 100                  6                    2024-11-20           23:14:29
-abcdef               100                  11                   2024-11-20           23:28:59
-edghifglmne          100                  2                    2024-11-20           23:40:19
+### Output File (`Output.txt`)
+```text
+User-Name            Level                Total Score          Obtained Score       Date                 Time                 
+anirbanrahi          Easy                 30                   5                    2024-11-21           19:27:24             
+akib jawad           Medium               30                   7                    2024-11-21           19:28:17
 ```
