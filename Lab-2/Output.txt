@@ -1,0 +1,7 @@
+asdfewafav           Easy                 10                   5
+sdfsefe              Medium               20                   7
+adfew                Hard                 30                   7
+ttggagd              Easy                 10                   2
+hello                Easy                 10                   10                   
+abcdef               Easy                 10                   5                    
+efghi                Easy                 10                   1                    
