@@ -1,62 +1,38 @@
-# Math Puzzle Game: RahiForKids
+# Math Puzzle Game
 
-**RahiForKids** is a console-based Java application that provides an engaging Math Puzzle Game for children. The game offers three difficulty levels and tracks user progress with a history feature.
-
----
+## Overview
+The **Math Puzzle Game** is a console-based Java game where users can solve math expressions based on selected difficulty levels. The game tracks the user's score and stores game results (history) in an output file.
 
 ## Features
+- **Start Game**: Play the game by answering arithmetic questions.
+- **History**: View the history of past games including scores.
+- **Exit**: Exit the game.
 
-- **Game Levels**: Easy, Medium, and Hard difficulty levels with math expressions to solve.
-- **Scoring System**: Tracks and displays the user’s score for each session.
-- **History Tracking**: Saves game history, including username, level, scores, and date-time.
-- **Flexible Input**: Users can provide answers or use commands like `stop` to end the game or `skip` to skip a question.
+### Difficulty Levels:
+- **Easy**: 10 questions
+- **Medium**: 20 questions
+- **Hard**: 30 questions
 
----
+### Scoring:
+- Correct answers increase your score.
+- Incorrect answers will show the correct result.
+- Users can skip questions or stop the game at any point.
+- Full score is awarded for correctly answering all questions.
 
-## How It Works
+## How to Run the Game
 
-1. **Menu Options**:
-    - `Start Game`: Begin a new game session.
-    - `History`: View a list of past game results stored in `Output.txt`.
-    - `Exit`: Exit the application.
+1. Ensure **Java** is installed on your system.
+   - You can check Java installation with `java -version` in your terminal.
+   - Download Java from: https://www.oracle.com/java/technologies/javase-jdk11-downloads.html
 
-2. **Difficulty Levels**:
-    - **Easy**: Simple math problems.
-    - **Medium**: Moderately challenging problems.
-    - **Hard**: Complex problems.
+2. Clone or download the repository to your local machine.
 
-3. **Input File**:
-    - Math problems are read from `Input.txt` in the format of expressions (e.g., `2 + 3, 5 * 6`).
-    - Problems are categorized into levels based on their position in the file.
+3. Navigate to the directory containing `Game.java`.
 
-4. **Output File**:
-    - Game history is saved in `Output.txt`, including:
-      - Username
-      - Level
-      - Total Score
-      - Obtained Score
-      - Date
-      - Time
+4. Open a terminal and compile the Java code:
+   ```bash
+   javac Game.java
 
----
-
-## Requirements
-
-- **Java Version**: OpenJDK 17 or later.
-- **Input File**: `Input.txt` containing comma-separated math expressions.
-- **Output File**: `Output.txt` (automatically created if not present).
-
----
-
-## File Format
-
-### Input File (`Input.txt`):
-```text
-2 + 3, 5 * 6, 8 - 4, 12 / 3
-```
-### Output File (`Output.txt`)
-```text
-User-Name            Level                Total Score          Obtained Score       Date                 Time                 
-anirbanrahi          Easy                 30                   5                    2024-11-21           19:27:24             
-akib jawad           Medium               30                   7                    2024-11-21           19:28:17
-```
+5. Run the .class code:
+   ```bash
+   java Game
