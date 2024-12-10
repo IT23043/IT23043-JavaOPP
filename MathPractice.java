@@ -33,7 +33,7 @@ public class MathPractice {
         System.out.print("Enter y: ");
         double y = input.nextDouble();
         double rPolar = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
-        double thetaPolar = Math.toDegrees(Math.atan(y / x));
+        double thetaPolar = Math.toDegrees(Math.atan2(y , x));
         System.out.println("Radius: " + rPolar + ", Angle: " + thetaPolar + "°");
 
         // Equation 4: Distance Between Two Points
